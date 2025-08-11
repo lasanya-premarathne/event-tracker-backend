@@ -3,15 +3,16 @@ package com.example.events_tracker_backend.service;
 import com.example.events_tracker_backend.entity.User;
 import com.example.events_tracker_backend.repository.UserRepository;
 import com.example.events_tracker_backend.util.JwtUtil;
+
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
+
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
-
 public class AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;

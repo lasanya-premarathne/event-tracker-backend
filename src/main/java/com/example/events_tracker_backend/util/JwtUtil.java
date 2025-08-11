@@ -1,18 +1,19 @@
 package com.example.events_tracker_backend.util;
 
-import io.jsonwebtoken.Claims;
+import org.springframework.stereotype.Component;
+
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
-import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
+
 import java.security.Key;
+
 import java.util.Date;
 
 @Component
-
 public class JwtUtil {
 
     private static final String SECRET = "whyIsThisSoHardwhyIsThisSoHardwhyIsThisSoHard"; // 32+ chars
