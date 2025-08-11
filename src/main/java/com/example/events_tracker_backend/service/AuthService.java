@@ -11,38 +11,6 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-//public class AuthService {
-//    private final UserRepository userRepository;
-//    private final PasswordEncoder passwordEncoder;
-//    private final JwtUtil jwtUtil;
-//
-//    public AuthService(UserRepository userRepository, PasswordEncoder passwordEncoder, JwtUtil jwtUtil) {
-//        this.userRepository = userRepository;
-//        this.passwordEncoder = passwordEncoder;
-//        this.jwtUtil = jwtUtil;
-//    }
-//
-//    public String login(String userName, String password) {
-//        // fetch user
-//        // check password
-//        // generate JWT
-//        // return token
-//        Optional<User> existingUserOpt = userRepository.findByUserName(userName);
-//
-//        if (existingUserOpt.isEmpty()) {
-//            throw new UsernameNotFoundException("User not found");
-//        }
-//
-//        User existingUser = existingUserOpt.get();
-//
-//        if (!passwordEncoder.matches(password, existingUser.getPassword())) {
-//            throw new BadCredentialsException("Invalid password");
-//        }
-//
-//        return jwtUtil.generateToken(userName);
-//    }
-//
-//}
 
 public class AuthService {
     private final UserRepository userRepository;
