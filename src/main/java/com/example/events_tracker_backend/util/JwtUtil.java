@@ -12,48 +12,6 @@ import java.security.Key;
 import java.util.Date;
 
 @Component
-//public class JwtUtil {
-//
-//    // Ideally load from application.properties
-//    private final String SECRET = "whyIsThisSoHard_whyIsThisSoHard"; // must be at least 32 chars
-//    private final long EXPIRATION_MS = 3600000; // 1 hour
-//
-//    private final Key key = Keys.hmacShaKeyFor(SECRET.getBytes());
-//
-//    public String generateToken(String username) {
-//        long nowMillis = System.currentTimeMillis();
-//        Date now = new Date(nowMillis);
-//        Date expiry = new Date(nowMillis + EXPIRATION_MS);
-//
-//        return Jwts.builder()
-//                .setSubject(username)
-//                .setIssuedAt(now)
-//                .setExpiration(expiry)
-//                .signWith(key, SignatureAlgorithm.HS256)
-//                .compact();
-//    }
-//
-//    public String extractUsername(String token) {
-//        return parseClaims(token).getSubject();
-//    }
-//
-//    public boolean validateToken(String token, String username) {
-//        String extractedUsername = extractUsername(token);
-//        return (extractedUsername.equals(username) && !isTokenExpired(token));
-//    }
-//
-//    private boolean isTokenExpired(String token) {
-//        return parseClaims(token).getExpiration().before(new Date());
-//    }
-//
-//    private Claims parseClaims(String token) {
-//        return Jwts.parser()
-//                .setSigningKey(key)
-//                .build()
-//                .parseClaimsJws(token)
-//                .getBody();
-//    }
-//}
 
 public class JwtUtil {
 
